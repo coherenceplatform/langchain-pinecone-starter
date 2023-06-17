@@ -1,0 +1,19 @@
+@mixin font($font-family, $font-file, $font-weight) {
+    @font-face {
+      font-family: $font-family;
+      src: url($font-file+'-'+$font-weight+'.eot');
+      src: url($font-file+'-'+$font-weight+'.eot?#iefix') format('embedded-opentype'),
+           url($font-file+'-'+$font-weight+'.woff') format('woff'),
+           url($font-file+'-'+$font-weight+'.woff2') format('woff2'),
+           url($font-file+'-'+$font-weight+'.ttf') format('truetype');
+      font-weight: $font-weight;
+      font-style: normal;
+    }
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+  @include font('Lausanne', '../fonts/TWKLausanne', 300);
+  @include font('Lausanne', '../fonts/TWKLausanne', 400);
+  @include font('Lausanne', '../fonts/TWKLausanne', 500);
+  @include font('Lausanne', '../fonts/TWKLausanne', 700);

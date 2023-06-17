@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port $PORT",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "@tsconfig/svelte": "^4.0.1",
+    "svelte": "^3.57.0",
+    "svelte-check": "^2.10.3",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "firebase": "^9.22.1",
+    "install": "^0.13.0",
+    "js-cookie": "^3.0.5",
+    "npm": "^9.7.1",
+    "open-simplex-noise": "^2.5.0",
+    "seedrandom": "^3.0.5",
+    "svelte-routing": "^1.8.9",
+    "uuid": "^9.0.0"
+  }
+}

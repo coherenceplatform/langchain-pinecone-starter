@@ -1,0 +1,18 @@
+frontend:
+  type: frontend
+  assets_path: dist
+  repo_path: frontend
+  local_packages: ["node_modules"]
+  
+  build: ["yarn", "build"]
+  dev: ["yarn", "dev"]
+
+api:
+  type: backend
+  repo_path: backend
+  url_path: "/api"
+  prod: ["python", "app.py"]
+  dev: ["python", "app.py"]
+
+  system:
+    health_check: /api/index

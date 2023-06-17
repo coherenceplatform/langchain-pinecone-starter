@@ -1,0 +1,17 @@
+flask
+flask_admin
+pypdf
+pinecone-client
+sqlalchemy
+firebase_admin
+langchain
+tiktoken
+openai[datalib]
+openai[embeddings]
+beautifulsoup4
+unstructured
+tabulate
+requests
+black
+ruff
+ipython

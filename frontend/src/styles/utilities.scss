@@ -1,0 +1,145 @@
+:root {
+    // Spacing
+    /* 1rem = 10px by default */
+    --unit6: 4rem;
+    --unit5: 3rem;
+    --unit4: 2rem;
+    --unit3: 1.5rem;
+    --unit2: 1rem;
+    --unit1: 0.5rem;
+    --unit0: 0;
+}
+
+@for $i from 0 through 6 {
+    .m-#{$i} {
+        margin: var(--unit#{$i});
+    }
+    .my-#{$i} {
+        margin-top: var(--unit#{$i});
+        margin-bottom: var(--unit#{$i});
+    }
+    .mx-#{$i} {
+        margin-left: var(--unit#{$i});
+        margin-right: var(--unit#{$i});
+    }
+    .mt-#{$i} {
+        margin-top: var(--unit#{$i});
+    }
+    .mb-#{$i} {
+        margin-bottom: var(--unit#{$i});
+    }
+    .ml-#{$i} {
+        margin-left: var(--unit#{$i});
+    }
+    .mr-#{$i} {
+        margin-right: var(--unit#{$i});
+    }
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-left: auto;
+}
+
+.clip-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.relative {
+    position: relative;
+}
+
+.body-text-color {
+    color: var(--body-text-color);
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+.block {
+    display: block;
+}
+
+.flex,
+.inline-flex {
+    display: flex;
+
+    &.direction-column {
+        flex-direction: column;
+    }
+
+    &.align-center {
+        align-items: center;
+    }
+    &.align-start {
+        align-items: flex-start;
+    }
+    &.justify-start {
+        justify-content: flex-start;
+    }
+    &.justify-end {
+        justify-content: flex-end;
+    }
+    &.justify-around {
+        justify-content: space-around;
+    }
+    &.justify-between {
+        justify-content: space-between;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.w-100 {
+    width: 100%;
+}
+.w-75 {
+    width: 75%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-25 {
+    width: 25%;
+}
+
+.op-100 {
+    opacity: 1;
+}
+
+.op-85 {
+    opacity: 0.85;
+}
+
+.op-60 {
+    opacity: 0.6;
+}
+
+.op-45 {
+    opacity: 0.45;
+}

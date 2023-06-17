@@ -1,0 +1,76 @@
+:root {
+    --field-border: 0 0 0 0.1rem var(--field-border-color);
+    --field-border-none: 0 0 0 0 var(--primary-focus);
+    --field-border-focus: 0 0 0 0.1rem var(--primary), 0 0 0 0.3rem var(--primary-bg);
+    --field-border-invalid: 0 0 0 0.1rem var(--danger);
+    --field-border-radius: var(--border-radius-small);
+  }
+
+  button.dropdown-button,
+  input,
+  textarea,
+  select {
+    box-shadow: inset var(--field-border);
+    padding: var(--small-padding);
+    transition: box-shadow var(--base-transition);
+    border-radius: var(--field-border-radius);
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:focus {
+      transition: background-color 600000s 0s, color 600000s 0s;
+    }
+
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: var(--field-border-focus);
+    }
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: var(--field-bg);
+  }
+
+  input,
+  textarea,
+  select,
+  button,
+  .button,
+  .dropdown {
+    font-size: var(--font-size-small);
+
+    &.invalid {
+      box-shadow: var(--field-border-invalid);
+    }
+  }
+
+  .form-field-large {
+    font-size: var(--font-size-regular);
+    line-height: 1.5;
+  }
+
+  .button {
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .button-group {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-end;
+  }
+
+  button {
+    background: none;
+    &:focus {
+      outline: none;
+      box-shadow: var(--field-border-focus);
+    }
+  }
